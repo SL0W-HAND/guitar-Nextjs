@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 
 
 const Home = () => {
-
+/*
     const [productList,setProductList] = useState([])
 
     useEffect(() => {
@@ -14,13 +14,11 @@ const Home = () => {
             
         })   
     }, [])
-
+*/
     return (
         <div>
-            <Navbar/>
-            {productList.map(element => {
-               <h1>{element.name}</h1> 
-            })}
+         
+        
         </div>
     )
 
