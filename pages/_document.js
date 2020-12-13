@@ -5,10 +5,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <head>
-            <title>Guitar store</title>
-        </head>
-        <body className='lol'>
+        <Head/>
+        <body>
           <Main /> 
           <NextScript />
         </body>
