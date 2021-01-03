@@ -1,10 +1,9 @@
 import React, { Component, useEffect, useState } from 'react'
+import Card from '../components/Card/Card.js'
 
 const Home = () => {
     
     const [productList,setProductList] = useState([])
-
-    
 
     useEffect(()=>{
         window.fetch('api/guitar')
@@ -18,12 +17,12 @@ const Home = () => {
        
     },[])
 
-    
-
      return (
         <div>    
             {productList.length > 0 
-                ? productList[0].name
+                ? productList.map((element) => {
+                    return <Card name={element.name} price={element.price} image={element.image} key={element.id.toString()}/>
+                })
                 : null
             }
         </div>

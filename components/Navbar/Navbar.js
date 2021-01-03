@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/Link'
+import Image from 'next/image'
 
 const Navbar = () => {
     return (
@@ -13,7 +14,7 @@ const Navbar = () => {
                 </Link>   
             </div>
             <figure>
-                    <img source='@components/assets/guitar-pick.svg' alt='favicon'/>
+                <Image src='/images/assets/guitar-pick.svg'  width="40" height="40"  alt='favicon'/>
             </figure>
         </nav>
     )
