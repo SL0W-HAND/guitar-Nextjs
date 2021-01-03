@@ -4,12 +4,13 @@ import Footer from '@components/Footer/Footer'
 
 const Layout = ({children}) => {
     return (
-        <div className="con">
+        <div>
             <Navbar/>
             {children}
             <Footer/>
         </div>
     )
 }
+
 
 export default Layout
