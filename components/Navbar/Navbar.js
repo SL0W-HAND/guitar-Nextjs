@@ -3,18 +3,19 @@ import Link from 'next/Link'
 
 const Navbar = () => {
     return (
-        <div>
-            <nav>
-                <menu>
-                    <Link href="/">
-                    <a >home</a>
-                    </Link>
-                    <Link href="/about">
-                    <a >about</a>
-                    </Link>   
-                </menu>
-            </nav>
-        </div>
+        <nav className='nav'>
+           <div className='nav_links'>
+                <Link href="/">
+                    <a >Home</a>
+                </Link>
+                <Link href="/about">
+                    <a >About</a>
+                </Link>   
+            </div>
+            <figure>
+                    <img source='@components/assets/guitar-pick.svg' alt='favicon'/>
+            </figure>
+        </nav>
     )
 }
 

@@ -1,29 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import Navbar from '@components/Navbar/Navbar';
-
+import React, { Component, useEffect, useState } from 'react'
 
 const Home = () => {
-/*
+    
     const [productList,setProductList] = useState([])
 
-    useEffect(() => {
-        window.fetch('/api/guitar')
-        .then(res => res.json())
-        .then(({data,lenght})=>{
-            setProductList(data)
-            
-        })   
-    }, [])
-*/
-    return (
-        <div>
-         
-        
+    
+
+    useEffect(()=>{
+        window.fetch('api/guitar')
+        .then((response) =>  response.json() )
+        .then((response)=>{
+            if (response) {
+                setProductList(response.data)
+                console.log(productList)
+            }  
+        })
+       
+    },[])
+
+    
+
+     return (
+        <div>    
+            {productList.length > 0 
+                ? productList[0].name
+                : null
+            }
         </div>
-    )
-
+     )
 }
-        
-
 
 export default Home
