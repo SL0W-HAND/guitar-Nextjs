@@ -18,10 +18,10 @@ const Home = () => {
     },[])
 
      return (
-        <div>    
+        <div className='products_container'>    
             {productList.length > 0 
                 ? productList.map((element) => {
-                    return <Card name={element.name} price={element.price} image={element.image} key={element.id.toString()}/>
+                    return <Card name={element.name} price={element.price} image={element.image} stars={element.stars} key={element.id.toString()}/>
                 })
                 : null
             }
