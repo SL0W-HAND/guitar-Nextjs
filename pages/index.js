@@ -1,5 +1,6 @@
-import React, { Component, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from '../components/Card/Card.js'
+
 
 const Home = () => {
     
@@ -11,7 +12,6 @@ const Home = () => {
         .then((response)=>{
             if (response) {
                 setProductList(response.data)
-                console.log(productList)
             }  
         })
        
@@ -21,8 +21,15 @@ const Home = () => {
         <div className='products_container'>    
             {productList.length > 0 
                 ? productList.map((element) => {
-                    return <Card name={element.name} price={element.price} image={element.image} stars={element.stars} key={element.id.toString()}/>
-                })
+                    return <Card 
+                                name={element.name} 
+                                price={element.price} 
+                                image={element.image} 
+                                stars={element.stars} 
+                                id={element.id.toString()} 
+                                key={element.id.toString()}
+                            />
+                  })
                 : null
             }
         </div>

@@ -1,5 +1,5 @@
 :root{
-    --main-bg-color: #D23430;
+    --main-bg-color: #c70039;
     --first-font: 'Segoe UI';
 }
 
@@ -8,10 +8,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
 
 .nav-container{
     background-color: var(--main-bg-color);
+    position: sticky;
+    top:0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1
 }
 
 .nav{
@@ -55,9 +60,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    resize: horizontal;
-    max-width: 16rem;
     
+    max-width: 16rem;
 }
 
 .card-body{
