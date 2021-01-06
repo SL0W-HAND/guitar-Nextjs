@@ -12,7 +12,6 @@ export class Card extends Component {
             id:""
         }
     }
-    //<Image className='image' src={this.state.image} alt={this.state.name}/>
 
     componentDidMount(){
         this.setState({price: this.props.price, image: this.props.image.toString(), name:this.props.name, stars:this.props.stars, id:this.props.id})
