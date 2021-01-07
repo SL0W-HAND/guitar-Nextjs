@@ -22,7 +22,7 @@ const ProductItem = () => {
     }, [])
     return (
         <div>
-            {Guitar == null ? 'not found' : <Product_detail Guitar={Guitar}/>}
+            {Guitar == null ? 'not found' : <Product_detail guitar={Guitar.name}/>}
         </div>
     )
 }
