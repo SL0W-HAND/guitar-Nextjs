@@ -7,22 +7,16 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 
 
 
+
+
 const ProductItem = () => {
 
     const { 
         query: {productId}
     } = useRouter();
-
-    const [Guitar, setGuitar] = useState({})
-
-    useEffect(() => {
-        fetch(`/api/guitar/${productId}`)
-        .then(response => response.json())
-        .then(data => setGuitar(data));
-    }, [])
     return (
         <div>
-            {Guitar == null ? 'not found' : <Product_detail guitar={Guitar.name}/>}
+            page of{productId}
         </div>
     )
 }
