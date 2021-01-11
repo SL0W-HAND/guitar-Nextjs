@@ -4,7 +4,7 @@ export class Product_detail extends Component {
     constructor(props){
         super(props);
         this.state = {
-            guitar:""
+            guitar:{}
         }
     }
 
@@ -13,11 +13,10 @@ export class Product_detail extends Component {
     }
 
     render() {
-    
-
+        const {guitar} = this.state
         return (
             <div>
-              {this.state.guitar}
+              {guitar.name}
             </div>
         )
     }

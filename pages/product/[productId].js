@@ -6,18 +6,41 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 //import { route } from 'next/dist/next-server/server/router'
 
 
+export async function getStaticPaths() {
+  // Return a list of possible value for id
+  const res = await fetch('https://guitar-nextjs.vercel.app/api/guitar')
+  
+  const guitars = await res.json()
+  
+
+  const paths = guitars.data.map((element) => ({
+    params: { productId: element.id },
+  }))
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export async function getStaticProps({ params }) {
+  // Fetch necessary data for the product detail
+  const res = await fetch(`https://guitar-nextjs.vercel.app/api/guitar/${params.productId}`)
+
+  const guitar = await res.json()
 
 
+  return { props: { guitar } }
 
-const ProductItem = () => {
+}      
 
-    const { 
-        query: {productId}
-    } = useRouter();
+
+const ProductItem = ({guitar}) => {
+  //guitar sumary
     return (
-        <div>
-            page of{productId}
-        </div>
+        <section>
+            <Product_detail guitar={guitar}/>
+        </section>
     )
 }
 
