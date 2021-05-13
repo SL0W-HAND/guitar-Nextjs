@@ -1,5 +1,6 @@
 const data = {
     '0f59d497cc7e4f389c05ceecb9f8aa71':{
+        'id':'0f59d497cc7e4f389c05ceecb9f8aa71',
         'name':'Jimi Hendrix',
         'description':["Just two months after featuring Jimi on the cover of this very magazine we find ourselves talking once again about his influence. Perhaps it's no surprise. Jimi frequently tops online 'best guitarist' polls, and, so deep is his influence, there's a good chance you already use a raft of techniques and sounds he pioneered. ",
                         "It turns out you’d be in good company! Eddie Van Halen, Joe Satriani, Kirk Hammett and Ritchie Blackmore all cite Jimi as a major influence."
@@ -12,6 +13,7 @@ const data = {
         'guitar-image':'/images/guitars/left_stratocaster.jpg',
     },
     '5b12e0e0bbda4e1bbcdc0a593349fe21':{
+        'id':'5b12e0e0bbda4e1bbcdc0a593349fe21',
         'name':'Eric Clapton',
         'description':[ "“It’s unrecordable.” That was the verdict of a shellshocked engineer in March 1966, as a 21-year-old Eric Clapton plugged a 1960 Les Paul into a 1962 Marshall 2x12 combo, dialled up the volume and detonated Decca Studios. ",
                         "“I thought the obvious solution was to get an amp and play it as loud as it would go,” the guitarist reasoned of his approach to the trailblazing Blues-breakers album with John Mayall. “Until it was just about to burst.” ",
@@ -25,6 +27,7 @@ const data = {
         'guitar-image':'/images/guitars/Blackie.jpg',
     },
     '17bc2c523946448496fbd7620430add8':{
+        'id':'17bc2c523946448496fbd7620430add8',
         'name':'Brian May',
         'description':['Topping our classic rock poll and receiving more votes than any polled player, Brian’s a true pioneer of tone and one of those rare guitarists who’s instantly recognisable from a single note.',
                         'We caught up with the Queen guitarist to talk about his influences, tone, trademark harmonies and what it means to him to be so highly regarded in the guitar community.',    
@@ -38,6 +41,7 @@ const data = {
         'guitar-image':'/images/guitars/Red_special.jpg',
     },
     'dde67a4b8da24779bc99c15831890dd4':{
+        'id': 'dde67a4b8da24779bc99c15831890dd4',
         'name':'Jimmy Page',
         'description':[
             "“Well, when you think of what a riff is, it’s hypnotic and that’s going back to the blues, which is coming out of Africa. We didn’t know that at the time. Interestingly, I’ve just got a bootleg from a gig in Orlando and in between every song I’m playing all these riffs.",
@@ -51,6 +55,7 @@ const data = {
         'guitar-image':'/images/guitars/Gibson_Les_Paul.jpg',
     },
     '80e897ab1932418e9728316fd82af265':{
+        'id':'80e897ab1932418e9728316fd82af265',
         'name':'Eddie Van Halen',
         'description':[
             "“I’m a very rhythmic player, out of necessity. Because believe it or not, we used to play without a bass player. It was just Alex and I. I also had a tendency to fill every f*cking hole possible, but I had to because there was no other instrument.”",
@@ -65,6 +70,7 @@ const data = {
         'guitar-image':'/images/guitars/frankenstrat.jpg',
     },
     '52a9889a3e3940bdbbdeec4ca13364bb':{
+        'id':'52a9889a3e3940bdbbdeec4ca13364bb',
         'name':'David Gilmour',
         'description':["“I tend to play more with my fingers than a guitar pick these days, for some reason that I don’t quite understand. It just seems to be the way it is. That might make a little bit of difference to the sound, but it’s not really anything I’ve been analysing or intending to do...”"],
         'image':'/images/guitarists/david_gilmour.jpg',
@@ -75,6 +81,7 @@ const data = {
         'guitar-image':'/images/guitars/fender-stratocaster-black.jpg',
     },
     '4f8ba3408b134d6ba341b8f3d4caa0b1':{
+        'id':'4f8ba3408b134d6ba341b8f3d4caa0b1',
         'name':'Slash',
         'description':[
             "“Playing rhythm is one of the main ones. There are specific things I practise before a show – for the first 20 minutes I won’t do anything too outrageous and just loosen up. I think it’s important to remember those techniques are a key part of what I play. You don’t want to be stiff when it comes to those right-hand patterns, so I might play any number of songs. Pinball Wizard is always a good one! ",
@@ -88,6 +95,7 @@ const data = {
         'guitar-image':'/images/guitars/Gibson_Les_paul.jpg',
     },
     '01f9bac2d7894b13bc7ea7a74cb1eda5':{
+        'id':'01f9bac2d7894b13bc7ea7a74cb1eda5',
         'name':'Angus Young',
         'description':[
             "Ever since 1976’s High Voltage landed like a right hook, nobody has done it harder, louder or lairier than the Youngs. There’s a case that AC/DC’s wrecking-ball riff-raff hinges on those world-beating right hands, but you won’t nail the vibe without getting the gear cornerstones right. ",
