@@ -105,7 +105,7 @@ const data = {
         ],
         'image':'/images/guitarists/angus-young.jpg',
         'band':'AC/DC',
-        'band-logo':'/images/band-logos/ACDC.png',
+        'band_logo':'/images/band-logos/ACDC.png',
         'link_videos':[],
         'guitar_used':'Gibson SG',
         'guitar_image':'/images/guitars/Gibson_Sg.jpg',
