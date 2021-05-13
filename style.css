@@ -37,54 +37,92 @@
     color:#FFFFFF;
 }
 
-.guitarist{
-    
+.Home{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
-.cover{
+.Guitarist{
+    width: 100vw;
+    display: block;
+}
+
+.Guitarist_Cover{
     position: relative;
     width: 100vw;
-}
-
-.cover img{
-    position: absolute;
-    
-}
-
-.cover h1 {
-    position: absolute;
+    max-height: 400px;
+    overflow: hidden;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .cover_image{
-    width: 900px;
+    width: 100vw;
+}
+
+.Guitarist_Cover h1 {
+    position: absolute;
+    max-width: 16rem;
+    top: 0;
+    color: #FFFFFF;
+    font-family: var(--first-font);
+    margin:10px 0 0 10px;
 }
 
 .Guitarist_band{
-    
+    position: relative;
+    height: 100px;
+    border-radius: 5px;
 }
+
+.Guitarist_band img{
+    height: 100px;
+    float: right;
+}
+
+.Guitarist_band h1{
+    position: absolute;
+}
+
 
 .card{
     width: 18rem;
     height: 18rem;
     margin: 1%;
     border-radius: 10px;
+    position: relative;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .card-img-top{
-    height: 90px;
-    width: 90px;
+    height: 18rem;
+    width: 18rem;
+    border-radius: 10px;
 }
 .card-title{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    
     max-width: 16rem;
+    color: #FFFFFF;
+    background-color: var(--main-bg-color);
+}
+.card-body a:hover{
+    text-decoration: none;
 }
 
 .card-body{
     position: absolute;
     bottom: 0;
+    font-family: var(--first-font);
 }
 
 .card-body div{

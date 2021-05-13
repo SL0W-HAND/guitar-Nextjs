@@ -17,19 +17,19 @@ class Guitarist_detal extends Component {
         const {guitarist} = this.state
         console.log( this.state.guitarist)
         return (
-            <section classname='Guitarist'>
-                <div classname='Guitarist_Cover'>
-                    <img src={guitarist.image} alt={guitarist.name} classname='cover_image'/>
+            <section class='Guitarist'>
+                <div class='Guitarist_Cover'>
+                    <img src={guitarist.image} alt={guitarist.name} class='cover_image'/>
                     <h1>{guitarist.name}</h1>
                 </div>
-                <div classname='Guitarist_band'> 
+                <div class='Guitarist_band'> 
                     <h2>Band:{guitarist.band}</h2>
-                    <img src={guitarist.guitar_image}/>
+                    <img src={guitarist.band_logo}/>
                 </div>
-                <div classname='Guitarist_description'>
+                <div class='Guitarist_description'>
                     <span>{guitarist.description}</span>
                 </div>
-                <div classname='Guitarist_Guitar'>
+                <div class='Guitarist_Guitar'>
                     <h2>{guitarist.guitar_used}</h2> 
                     <img src={guitarist.guitar_image}/>
                 </div>
