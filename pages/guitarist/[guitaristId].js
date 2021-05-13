@@ -5,7 +5,7 @@ import Guitarist_detail from '@components/Guitarist_detail/Guitarist_detail'
 import { GetStaticPaths, GetStaticProps } from 'next'
 //import { route } from 'next/dist/next-server/server/router'
 
-
+/*
 export async function getStaticPaths() {
   // Return a list of possible value for id
   const res = await fetch('https://guitar-nextjs.vercel.app/api/guitar')
@@ -35,13 +35,13 @@ export async function getStaticProps({ params }) {
   return { props: { guitar } }
 
 }      
-
+*/
 
 const ProductItem = ({guitar}) => {
   //guitar sumary
     return (
         <section>
-            <Guitarist_detail guitarist={guitar}/>
+            
         </section>
     )
 }
