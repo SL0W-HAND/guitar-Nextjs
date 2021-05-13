@@ -24,7 +24,7 @@ class Guitarist_detal extends Component {
                 </div>
                 <div classname='Guitarist_band'> 
                     <h2>Band:{guitarist.band}</h2>
-                    <img src={guitarist.band_logo}/>
+                    <img src={guitarist.guitar_image}/>
                 </div>
                 <div classname='Guitarist_description'>
                     <span>{guitarist.description}</span>
