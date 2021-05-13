@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import {useRouter} from 'next/router'
 import fetch from 'isomorphic-unfetch'
-import Product_detail from '@components/Product_detail/Product_detail'
+import Guitarist_detail from '@components/Guitarist_detail/Guitarist_detail'
 import { GetStaticPaths, GetStaticProps } from 'next'
 //import { route } from 'next/dist/next-server/server/router'
 
@@ -14,8 +14,10 @@ export async function getStaticPaths() {
   
 
   const paths = guitars.data.map((element) => ({
-    params: { productId: element.id },
+
+    params: { guitaristId: element.id },
   }))
+
 
   return {
     paths,
@@ -25,7 +27,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the product detail
-  const res = await fetch(`https://guitar-nextjs.vercel.app/api/guitar/${params.productId}`)
+  const res = await fetch(`https://guitar-nextjs.vercel.app/api/guitar/${params.guitaristId}`)
 
   const guitar = await res.json()
 
@@ -39,7 +41,7 @@ const ProductItem = ({guitar}) => {
   //guitar sumary
     return (
         <section>
-            <Product_detail guitar={guitar}/>
+            <Guitarist_detail guitarist={guitar}/>
         </section>
     )
 }
