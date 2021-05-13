@@ -8,7 +8,6 @@ export async function getStaticProps() {
   
     const guitars = await res.json()
   
-  
     return { props: { guitars } }
   
   }      
@@ -20,9 +19,7 @@ const Home = ({guitars}) => {
             { guitars.data.map((element) => {
                     return <Card 
                                 name={element.name} 
-                                price={element.price} 
                                 image={element.image} 
-                                stars={element.stars} 
                                 id={element.id.toString()} 
                                 key={element.id.toString()}
                             />
