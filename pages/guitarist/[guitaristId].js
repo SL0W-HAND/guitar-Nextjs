@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the product detail
-  const res = await fetch(`https://guitar-nextjs.vercel.app/api/guitar/${params.guitaristId}`)
+  const res = await fetch(`localhost:3000/api/guitar/${params.guitaristId}`)
 
   const guitar = await res.json()
 

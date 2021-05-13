@@ -4,7 +4,7 @@ import Card from '../components/Card/Card.js'
 
 export async function getStaticProps() {
     // Fetch necessary data for the index page
-    const res = await fetch('https://guitar-nextjs.vercel.app/api/guitar/')
+    const res = await fetch('localhost:3000/api/guitar/')
   
     const guitars = await res.json()
   
