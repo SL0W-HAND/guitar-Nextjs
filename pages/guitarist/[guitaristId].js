@@ -8,7 +8,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 
 export async function getStaticPaths() {
   // Return a list of possible value for id
-  const res = await fetch('https://guitar-nextjs-7bnaq4svc-sl0w-hand.vercel.app/api/guitar')
+  const res = await fetch('https://guitar-nextjs.vercel.app/api/guitar')
   
   const guitars = await res.json()
 
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the product detail
-  const res = await fetch(`https://guitar-nextjs-7bnaq4svc-sl0w-hand.vercel.app/api/guitar/${params.guitaristId}`)
+  const res = await fetch(`https://guitar-nextjs.vercel.app/api/guitar/${params.guitaristId}`)
 
   const guitar = await res.json()
 
@@ -37,9 +37,7 @@ export async function getStaticProps({ params }) {
 const ProductItem = ({guitar}) => {
   //guitar sumary
     return (
-        <section>
-            <Guitarist_detail guitarist={guitar}/>
-        </section>
+            <Guitarist_detail guitarist={guitar}/>  
     )
 }
 
