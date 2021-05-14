@@ -37,7 +37,7 @@ export async function getStaticProps({ params }) {
 const ProductItem = ({guitar}) => {
   //guitar sumary
     return (
-            <Guitarist_detail guitarist={guitar}/>  
+      <Guitarist_detail guitarist={guitar}/>  
     )
 }
 
