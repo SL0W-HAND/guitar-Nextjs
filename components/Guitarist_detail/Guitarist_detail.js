@@ -37,9 +37,14 @@ class Guitarist_detal extends Component {
                     <article className='Guitarist_description'>
                         <span><p>{guitarist.description}</p></span>
                     </article>
-                    <article>
+                    <article className='Guitarist_videos'>
                         <h1>Watch him</h1>
-                        
+                        {this.props.guitarist.link_videos.lenght == 0 
+                        ? null 
+                        : this.props.guitarist.link_videos.map((item)=>{
+                            return<iframe src={item}></iframe>
+                        }) 
+                        }
                     </article>
                 </section>
             </section>

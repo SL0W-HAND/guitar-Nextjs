@@ -122,6 +122,17 @@
     line-height: 1.5rem;
 }
 
+.Guitarist_videos{
+    display: flex;
+    flex-direction: column;
+}
+
+.Guitarist_videos iframe {
+    margin: 9px;
+    height: 420px;
+    width: 420px;
+}
+
 .Guitarist_Guitar{
     display: flex;
     width: 100%;
@@ -197,4 +208,12 @@
 
 .footer span {
     margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+    .Guitarist_videos iframe {
+        margin: 5px;
+        height: 310px;
+        width: 310px;
+    }
 }
