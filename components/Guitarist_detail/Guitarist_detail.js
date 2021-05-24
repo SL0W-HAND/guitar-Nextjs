@@ -11,29 +11,30 @@ class Guitarist_detal extends Component {
 
     componentDidMount(){
         this.setState({guitarist: this.props.guitarist})
-      
+        console.log(this.props.guitarist.link_videos)
     }
     render() {
         const {guitarist} = this.state
+     
+        
         return (
-            <section class='Guitarist'>
-                <section class='Guitarist_Cover'>
-                    <img src={guitarist.image} alt={guitarist.name} class='cover_image'/>
+            <section className='Guitarist'>
+                <section className='Guitarist_Cover'>
+                    <img src={guitarist.image} alt={guitarist.name} className='cover_image'/>
                     <h1>{guitarist.name}</h1>
                 </section>
-                <section class='Guitarist_container'>
+                <section className='Guitarist_container'>
                     <section>
-                        <div class='Guitarist_band'> 
+                        <div className='Guitarist_band'> 
                             <h2>Band: {guitarist.band}</h2>
                             <img src={guitarist.band_logo}/>
                         </div>
-                        
-                        <div class='Guitarist_Guitar'>
+                        <div className='Guitarist_Guitar'>
                             <h2>Guitar used: {guitarist.guitar_used}</h2> 
                             <img src={guitarist.guitar_image}/>
                         </div>
                     </section>
-                    <article class='Guitarist_description'>
+                    <article className='Guitarist_description'>
                         <span><p>{guitarist.description}</p></span>
                     </article>
                     <article>
