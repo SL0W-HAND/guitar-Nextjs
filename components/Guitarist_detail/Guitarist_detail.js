@@ -15,7 +15,6 @@ class Guitarist_detal extends Component {
     }
     render() {
         const {guitarist} = this.state
-        console.log( this.state.guitarist)
         return (
             <section class='Guitarist'>
                 <section class='Guitarist_Cover'>
