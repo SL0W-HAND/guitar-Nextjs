@@ -1,4 +1,4 @@
-#Guitar NextJs
+# Guitar NextJs
 
 This project was made with NextJs and is deployed thanks to the Vercel deployment in the following link (https://guitar-nextjs.vercel.app/)
 
